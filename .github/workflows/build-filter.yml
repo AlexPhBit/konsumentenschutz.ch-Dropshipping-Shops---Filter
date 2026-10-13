@@ -1,4 +1,4 @@
-name: Build Konsumentenschutz.ch Dropshipping Shops - AdGuard Filter
+name: Build Konsumentenschutz - AdGuard Filter
 permissions:
   contents: write
 
@@ -8,7 +8,6 @@ on:
   workflow_dispatch:
 
 env:
-  # Hier die Seite mit der Liste eintragen (nicht den Ratgeber-Artikel, falls die Liste woanders steht)
   SOURCE_URL: "https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/"
 
 jobs:
@@ -28,20 +27,21 @@ jobs:
         curl -fsSL -A "Mozilla/5.0 (compatible; adguard-filter-bot/1.0)" "$SOURCE_URL" -o data.html || exit 1
 
     - name: Convert to filter.txt
-      run: python3 convert.py "$SOURCE_URL"
+      run: python3 convert.py data.html
 
     - name: Update & Push
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
 
+        git add filter.txt
+
         # Zeitstempel-Zeile ignorieren, nur echte Änderungen zählen
-        if git diff --quiet -I '^! Generated:' filter.txt; then
+        if git diff --cached --quiet -I '^! Generated:'; then
           echo "Keine Änderungen"
           exit 0
         fi
 
-        git add filter.txt
         git commit -m "Update filter ($(date -u +%Y-%m-%dT%H:%M:%SZ)) [$(grep -c '^||' filter.txt) domains]"
         git pull --rebase origin main
         git push origin main
