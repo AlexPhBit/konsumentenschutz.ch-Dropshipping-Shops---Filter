@@ -1,0 +1,47 @@
+name: Build Konsumentenschutz.ch Dropshipping Shops - AdGuard Filter
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+env:
+  # Hier die Seite mit der Liste eintragen (nicht den Ratgeber-Artikel, falls die Liste woanders steht)
+  SOURCE_URL: "https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Install dependencies
+      run: pip install beautifulsoup4
+
+    - name: Download page
+      run: |
+        curl -fsSL -A "Mozilla/5.0 (compatible; adguard-filter-bot/1.0)" "$SOURCE_URL" -o data.html || exit 1
+
+    - name: Convert to filter.txt
+      run: python3 convert.py "$SOURCE_URL"
+
+    - name: Update & Push
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+
+        # Zeitstempel-Zeile ignorieren, nur echte Änderungen zählen
+        if git diff --quiet -I '^! Generated:' filter.txt; then
+          echo "Keine Änderungen"
+          exit 0
+        fi
+
+        git add filter.txt
+        git commit -m "Update filter ($(date -u +%Y-%m-%dT%H:%M:%SZ)) [$(grep -c '^||' filter.txt) domains]"
+        git pull --rebase origin main
+        git push origin main
