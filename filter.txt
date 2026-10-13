@@ -1,7 +1,7 @@
-! Title: Konsumentenschutz Dropshipping Filterlist
-! Description: Domains aus https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/
-! Generated: 2026-10-13T17:51:15.101965+00:00
-||20min.ch^
+! Title: Inoffizielle Kopie - Liste problematischer Dropshipping-Shops (Konsumentenschutz)
+! Source: https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/
+! Disclaimer: Inoffizielle, automatisch erzeugte Kopie. Keine Verbindung zur Stiftung fuer Konsumentenschutz. Keine Gewaehr fuer Richtigkeit und Vollstaendigkeit.
+! Generated: 2026-10-13T18:41:08.107941+00:00
 ||adamandrose-clo.com^
 ||adams-fashion.com^
 ||adhs.store^
@@ -143,7 +143,6 @@
 ||baumannzurich.ch^
 ||baumgartner-ortho.ch^
 ||bazeus.ch^
-||bazonline.ch^
 ||beamerwelt.ch^
 ||beatricevalmont.ch^
 ||beautiva.ch^
@@ -310,7 +309,6 @@
 ||copona.ch^
 ||coreex.ch^
 ||cosmos-bracelets.co^
-||coup.swiss^
 ||couturelondon.uk^
 ||cozeymaison.com^
 ||cozo.ch^
@@ -341,7 +339,6 @@
 ||dashausderjuwelenschweiz.com^
 ||dashdeal.ch^
 ||dashstore.ch^
-||dashtore.ch^
 ||daskofferhaus.de^
 ||davincidaslabel.ch^
 ||davincidaslabel.de^
@@ -447,7 +444,6 @@
 ||entuno.ch^
 ||enzocavalli.com^
 ||epicoolerklimaanlage.ch^
-||er-modewelt.com^
 ||ergotrek.ch^
 ||erinda-swiss.com^
 ||erisen.ch^
@@ -479,7 +475,6 @@
 ||fashion-schweiz.com^
 ||fashionhaus-klund.de^
 ||fastem.ch^
-||fedlex.admin.ch^
 ||felber-mode.ch^
 ||feldluft.de^
 ||feldmann-munchen.com^
@@ -489,7 +484,6 @@
 ||fhuber.ch^
 ||finalea.ch^
 ||finbo.ch^
-||findmind.ch^
 ||finisio.ch^
 ||fiolaberlin.ch^
 ||fiolazurich.ch^
@@ -963,7 +957,6 @@
 ||modehaus-basel.com^
 ||modehaus-blum.com^
 ||modehaus-wien.com^
-||modehaus.ch^
 ||modehausessen.de^
 ||modehausschweiz.ch^
 ||modehauswyss.com^
@@ -1170,7 +1163,6 @@
 ||powerjets.ch^
 ||praktishop.ch^
 ||prentaly.com^
-||presseportal.greenpeace.de^
 ||primaldo.ch^
 ||primdog.ch^
 ||primeship.ch^
@@ -1224,7 +1216,6 @@
 ||royaltier.co^
 ||ruchzuerich.ch^
 ||ruvendo.ch^
-||s.staub^
 ||safety-shoes.ch^
 ||saisonic.ch^
 ||salova.ch^
@@ -1255,7 +1246,6 @@
 ||seame-brand.com^
 ||seazon.ch^
 ||seazonary.ch^
-||seco.admin.ch^
 ||secretteddy.com^
 ||seekr.swiss^
 ||seiswiss.ch^
@@ -1269,7 +1259,6 @@
 ||sharpella.ch^
 ||sherum.com^
 ||shop-nova.ch^
-||shop.konsumentenschutz.ch^
 ||shop.milaweber.com^
 ||shopinbit.com^
 ||shopino-zurich.ch^
@@ -1317,7 +1306,6 @@
 ||sovendy-official.com^
 ||sparoase.ch^
 ||speczer.ch^
-||spielwarenverband.ch^
 ||spielzeugfant.ch^
 ||sr-shop.ch^
 ||stadlwerk.de^
@@ -1375,7 +1363,6 @@
 ||swissleno.ch^
 ||swisslona.ch^
 ||swissmino.ch^
-||swisspalace.ch^
 ||swisspedics.ch^
 ||swisspedics.shop^
 ||swissplatinum.ch^
@@ -1389,7 +1376,6 @@
 ||switzes.com^
 ||swoxx.ch^
 ||symplyshop.ch^
-||tagesanzeiger.ch^
 ||tamaz.ch^
 ||tanora-shop.com^
 ||tanora.co^
@@ -1446,7 +1432,6 @@
 ||troublefree.ch^
 ||truedesire.ch^
 ||truefresh.ch^
-||trustpilot.com^
 ||tryfolliclelab.com^
 ||trymiu.ch^
 ||tughi.eu^
@@ -1567,7 +1552,6 @@
 ||wear-nova.com^
 ||wearbreeze.de^
 ||wearmaya.ch^
-||web.archive.org^
 ||weber-mode.ch^
 ||weberbern.ch^
 ||webermode.ch^
@@ -1598,6 +1582,8 @@
 ||wunsch-stern.de^
 ||wwmode.de^
 ||xelio.ch^
+||xn--meinkostm-x9a.ch^
+||xn--meyer-genve-69a.ch^
 ||xn--rckenmacher-thb.ch^
 ||xn--zrich-modehaus-gsb.ch^
 ||xplorgreen.de^
