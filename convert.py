@@ -1,78 +1,92 @@
+import csv
 import re
 import sys
 from datetime import datetime, timezone
-from urllib.parse import urlparse
 
-from bs4 import BeautifulSoup
+SOURCE_URL = 'https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/'
+INPUT_FILE = sys.argv[1] if len(sys.argv) > 1 else 'data.html'
+OUTPUT_FILE = 'filter.txt'
 
-SOURCE_URL = sys.argv[1] if len(sys.argv) > 1 else ''
-
-# Domains, die nie geblockt werden sollen (Quelle selbst, Social Media, Assets)
-EXCLUDE = {
-    'konsumentenschutz.ch', 'facebook.com', 'twitter.com', 'x.com',
-    'linkedin.com', 'instagram.com', 'youtube.com', 'youtu.be',
-    'tiktok.com', 'schema.org', 'w3.org', 'google.com',
-    'googleapis.com', 'googletagmanager.com', 'gstatic.com',
-    'beobachter.ch', 'blick.ch', 'srf.ch', 'admin.ch',
-}
-
-# Dateiendungen, die der Domain-Regex sonst fälschlich als TLD erkennt
-FILE_EXT = {
-    'html', 'htm', 'php', 'asp', 'aspx', 'jpg', 'jpeg', 'png', 'gif',
-    'webp', 'svg', 'css', 'js', 'json', 'xml', 'pdf', 'ico', 'woff',
-    'woff2', 'ttf', 'txt', 'zip',
-}
-
-DOMAIN_RE = re.compile(
-    r'\b((?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,})\b',
-    re.IGNORECASE,
-)
+DOMAIN_RE = re.compile(r'^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$')
 
 
-def norm(domain):
-    domain = domain.lower().strip().strip('.')
-    return domain[4:] if domain.startswith('www.') else domain
+def clean(raw):
+    d = raw.strip().strip('"').lower()
+    d = re.sub(r'^https?://', '', d)
+    d = d.split('/')[0].split('?')[0].split(':')[0]
+    if d.startswith('www.'):
+        d = d[4:]
+    try:
+        d = d.encode('idna').decode('ascii')  # Umlaute -> Punycode (xn--...)
+    except UnicodeError:
+        return None
+    return d if DOMAIN_RE.match(d) else None
 
 
-def valid(domain):
-    tld = domain.rsplit('.', 1)[-1]
-    return '.' in domain and tld not in FILE_EXT and domain not in EXCLUDE
+def read_csv(path):
+    raws = []
+    with open(path, 'r', encoding='utf-8-sig', newline='') as f:
+        sample = f.read(4096)
+        f.seek(0)
+        reader = csv.reader(f, csv.Sniffer().sniff(sample, delimiters=',;'))
+        header = next(reader, [])
+        col = header.index('Website') if 'Website' in header else 0
+        for row in reader:
+            if len(row) > col and row[col].strip():
+                raws.append(row[col])
+    return raws
 
 
-with open('data.html', 'r', encoding='utf-8') as infile:
-    soup = BeautifulSoup(infile.read(), 'html.parser')
+def read_html(path):
+    from bs4 import BeautifulSoup
+    with open(path, 'r', encoding='utf-8') as f:
+        soup = BeautifulSoup(f.read(), 'html.parser')
+    raws = []
+    # Nur Tabellen mit der Spalte "Website" beruecksichtigen, nichts sonst von der Seite
+    for table in soup.find_all('table'):
+        headers = [c.get_text(' ', strip=True).lower() for c in table.find_all('th')]
+        if 'website' not in headers:
+            continue
+        col = headers.index('website')
+        for tr in table.find_all('tr'):
+            cells = tr.find_all('td')
+            if len(cells) > col:
+                text = cells[col].get_text(' ', strip=True)
+                if text:
+                    raws.append(text)
+    return raws
 
-# Navigation, Footer, Skripte usw. ignorieren
-for tag in soup(['script', 'style', 'nav', 'header', 'footer', 'noscript']):
-    tag.decompose()
 
-domains = set()
+raws = read_csv(INPUT_FILE) if INPUT_FILE.lower().endswith('.csv') else read_html(INPUT_FILE)
 
-# 1) Externe Links
-for a in soup.find_all('a', href=True):
-    href = a['href'].strip()
-    if href.startswith('//'):
-        href = 'https:' + href
-    if href.startswith(('http://', 'https://')):
-        host = urlparse(href).netloc.split(':')[0]
-        if host:
-            domains.add(norm(host))
-
-# 2) Domains, die nur als Text genannt werden (z. B. "yozo.ch" in einer Liste)
-for match in DOMAIN_RE.finditer(soup.get_text(' ', strip=True)):
-    domains.add(norm(match.group(1)))
-
-domains = sorted(d for d in domains if valid(d))
-
-if not domains:
-    print('Keine Domains gefunden - Abbruch', file=sys.stderr)
+if not raws:
+    print("Keine Tabelle mit der Spalte 'Website' gefunden - Abbruch. "
+          "Vermutlich wird die Liste per JavaScript nachgeladen. "
+          "Alternative: CSV manuell als data.csv ins Repo legen und 'python3 convert.py data.csv' ausfuehren.",
+          file=sys.stderr)
     sys.exit(1)
 
-with open('filter.txt', 'w', encoding='utf-8') as outfile:
-    outfile.write('! Title: Konsumentenschutz Dropshipping Filterlist\n')
-    outfile.write(f'! Description: Domains aus {SOURCE_URL}\n')
+domains = set()
+skipped = []
+for raw in raws:
+    d = clean(raw)
+    if d:
+        domains.add(d)
+    else:
+        skipped.append(raw)
+
+if not domains:
+    print('Keine gueltigen Domains gefunden - Abbruch', file=sys.stderr)
+    sys.exit(1)
+
+with open(OUTPUT_FILE, 'w', encoding='utf-8') as outfile:
+    outfile.write('! Title: Inoffizielle Kopie - Liste problematischer Dropshipping-Shops (Konsumentenschutz)\n')
+    outfile.write(f'! Source: {SOURCE_URL}\n')
+    outfile.write('! Disclaimer: Inoffizielle, automatisch erzeugte Kopie. Keine Verbindung zur Stiftung fuer Konsumentenschutz. Keine Gewaehr fuer Richtigkeit und Vollstaendigkeit.\n')
     outfile.write(f'! Generated: {datetime.now(timezone.utc).isoformat()}\n')
-    for domain in domains:
+    for domain in sorted(domains):
         outfile.write(f'||{domain}^\n')
 
-print(f'{len(domains)} Domains geschrieben')
+print(f'{len(domains)} Domains aus {len(raws)} Zeilen geschrieben')
+if skipped:
+    print(f'{len(skipped)} ungueltige Eintraege uebersprungen: {skipped}')
