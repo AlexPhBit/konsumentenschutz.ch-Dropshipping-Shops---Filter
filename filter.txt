@@ -1,7 +1,7 @@
 ! Title: Inoffizielle Kopie - Liste problematischer Dropshipping-Shops (Konsumentenschutz)
 ! Source: https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/
 ! Disclaimer: Inoffizielle, automatisch erzeugte Kopie. Keine Verbindung zur Stiftung fuer Konsumentenschutz. Keine Gewaehr fuer Richtigkeit und Vollstaendigkeit.
-! Generated: 2026-10-13T18:41:08.107941+00:00
+! Generated: 2026-10-14T09:16:38.295414+00:00
 ||adamandrose-clo.com^
 ||adams-fashion.com^
 ||adhs.store^
@@ -10,6 +10,7 @@
 ||adventure-shop.at^
 ||adventures-world.com^
 ||aeroback.ch^
+||aerova.ch^
 ||agogpets.ch^
 ||akkupc.ch^
 ||akkusnotebook.com^
