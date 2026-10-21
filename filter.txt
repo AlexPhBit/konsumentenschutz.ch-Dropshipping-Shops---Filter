@@ -1,7 +1,7 @@
 ! Title: Inoffizielle Kopie - Liste problematischer Dropshipping-Shops (Konsumentenschutz)
 ! Source: https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/
 ! Disclaimer: Inoffizielle, automatisch erzeugte Kopie. Keine Verbindung zur Stiftung fuer Konsumentenschutz. Keine Gewaehr fuer Richtigkeit und Vollstaendigkeit.
-! Generated: 2026-10-14T09:16:38.295414+00:00
+! Generated: 2026-10-21T09:06:31.491960+00:00
 ||adamandrose-clo.com^
 ||adams-fashion.com^
 ||adhs.store^
@@ -1246,7 +1246,6 @@
 ||schweizwaren.com^
 ||seame-brand.com^
 ||seazon.ch^
-||seazonary.ch^
 ||secretteddy.com^
 ||seekr.swiss^
 ||seiswiss.ch^
