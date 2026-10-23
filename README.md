@@ -3,7 +3,7 @@
 Dieses Repository erzeugt automatisch eine AdGuard-Home-Filterliste oder auch Pi-hole-Filterliste aus der öffentlichen Liste der Stiftung für Konsumentenschutz:
 https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/
 
-# Link zum Filter: https://raw.githubusercontent.com/AlexPhBit/konsumentenschutz.ch-Dropshipping-Shops---Filter/refs/heads/main/filter.txt
+### Link zum Filter: https://raw.githubusercontent.com/AlexPhBit/konsumentenschutz.ch-Dropshipping-Shops---Filter/refs/heads/main/filter.txt
 
 ## Haftungsausschluss
 - Dies ist ein privates Projekt und steht in keiner Verbindung zur Stiftung für Konsumentenschutz. Sie ist weder Herausgeberin noch verantwortlich für diese Liste.
