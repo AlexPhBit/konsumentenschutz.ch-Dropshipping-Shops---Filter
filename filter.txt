@@ -1,7 +1,7 @@
 ! Title: Inoffizielle Kopie - Liste problematischer Dropshipping-Shops (Konsumentenschutz)
 ! Source: https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/
 ! Disclaimer: Inoffizielle, automatisch erzeugte Kopie. Keine Verbindung zur Stiftung fuer Konsumentenschutz. Keine Gewaehr fuer Richtigkeit und Vollstaendigkeit.
-! Generated: 2026-10-21T09:06:31.491960+00:00
+! Generated: 2026-10-26T09:41:16.445356+00:00
 ||adamandrose-clo.com^
 ||adams-fashion.com^
 ||adhs.store^
@@ -98,6 +98,7 @@
 ||atelierluzern.com^
 ||atluminara.com^
 ||aurashop.ch^
+||aurelia-boutique.de^
 ||aureliezurich.ch^
 ||aureliusmode.ch^
 ||aurenzurich.ch^
@@ -575,6 +576,7 @@
 ||glpformula.com^
 ||go-breath.com^
 ||gobites.ch^
+||goldburg.de^
 ||gomenin.com^
 ||gomode.ch^
 ||goodibuy.ch^
@@ -839,6 +841,7 @@
 ||lunarmode.de^
 ||lunasandals-schweiz.com^
 ||lunero.ch^
+||luneviahsuisse.com^
 ||lunoire.ch^
 ||lurosa.ch^
 ||luster.ch^
@@ -887,6 +890,7 @@
 ||marvista.ch^
 ||masanno.com^
 ||mathilde-munchen.de^
+||mathildemontreux.com^
 ||maurys.ch^
 ||maxeluxe.ch^
 ||maxisneaker.ch^
@@ -922,6 +926,7 @@
 ||miabody.at^
 ||miabody.ch^
 ||miabody.de^
+||mila-haus.com^
 ||mila-home.ch^
 ||milamoda.ch^
 ||milumia.ch^
@@ -958,6 +963,7 @@
 ||modehaus-basel.com^
 ||modehaus-blum.com^
 ||modehaus-wien.com^
+||modehausclara.ch^
 ||modehausessen.de^
 ||modehausschweiz.ch^
 ||modehauswyss.com^
@@ -1052,6 +1058,7 @@
 ||noa-bern.com^
 ||nobliance.com^
 ||noe-lou.com^
+||noellezurich.com^
 ||nolara-shop.com^
 ||nolivia.ch^
 ||nomio.ch^
@@ -1244,6 +1251,7 @@
 ||schweizleben.ch^
 ||schweizmoda.com^
 ||schweizwaren.com^
+||schwizercare.ch^
 ||seame-brand.com^
 ||seazon.ch^
 ||secretteddy.com^
@@ -1428,6 +1436,7 @@
 ||trendypreis.ch^
 ||trendypreis.de^
 ||trendz-it.ch^
+||trikozathletic.co^
 ||trinktiger.de^
 ||troublefree.ch^
 ||truedesire.ch^
@@ -1463,6 +1472,7 @@
 ||vanhalenmode.nl^
 ||vantasia.ch^
 ||velmar.ch^
+||velmont-zurich.ch^
 ||velnora.ch^
 ||velocare.ch^
 ||veloremilano.com^
@@ -1537,6 +1547,7 @@
 ||vudy.ch^
 ||vueva.ch^
 ||vulsive.com^
+||vusilia.de^
 ||vynxaria.com^
 ||wagner-lederhaus.com^
 ||wagnerzuri.ch^
