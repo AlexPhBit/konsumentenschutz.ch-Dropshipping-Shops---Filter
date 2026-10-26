@@ -1,7 +1,7 @@
 ! Title: Inoffizielle Kopie - Liste problematischer Dropshipping-Shops (Konsumentenschutz)
 ! Source: https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/
 ! Disclaimer: Inoffizielle, automatisch erzeugte Kopie. Keine Verbindung zur Stiftung fuer Konsumentenschutz. Keine Gewaehr fuer Richtigkeit und Vollstaendigkeit.
-! Generated: 2026-10-26T09:41:16.445356+00:00
+! Generated: 2026-10-26T18:13:11.771451+00:00
 ||adamandrose-clo.com^
 ||adams-fashion.com^
 ||adhs.store^
@@ -625,6 +625,7 @@
 ||helvetisch-stil.com^
 ||helvetus.com^
 ||helvezen.com^
+||helvia-swiss.ch^
 ||helvika.ch^
 ||herbergerversand.ch^
 ||herrlampe.com^
@@ -703,6 +704,7 @@
 ||juwelierkeller.ch^
 ||kadabar.com^
 ||kaleaa.ch^
+||kalyra.ch^
 ||karita.ch^
 ||karmasocks.ch^
 ||karnz.de^
@@ -728,6 +730,7 @@
 ||kingstons.ch^
 ||kistenstein.ch^
 ||klarenmode.com^
+||kleefmode.com^
 ||klein-mode.de^
 ||kleinselect.com^
 ||koaala.ch^
@@ -819,6 +822,7 @@
 ||lovinal.shop^
 ||lovtora.ch^
 ||lozenda.de^
+||lozendafashion.com^
 ||lozendo.com^
 ||luce-bella.com^
 ||luckybag.ch^
@@ -1108,6 +1112,7 @@
 ||odense-modehus.dk^
 ||oertex.com^
 ||ohmyswiss.ch^
+||oladam-swiss.com^
 ||oliverharrisonlondon.co.uk^
 ||olivia-brown.co.uk^
 ||olivia-brownuk.com^
@@ -1274,6 +1279,7 @@
 ||shopluuma.de^
 ||shoptimal.ch^
 ||shopvivar.ch^
+||shopwecro.com^
 ||silentnite.ch^
 ||silken-swiss.com^
 ||silkerswiss.com^
@@ -1464,6 +1470,7 @@
 ||valcor-zurich.ch^
 ||valentinazurich.com^
 ||valora-mode.com^
+||valtner.ch^
 ||vamos-mode.ch^
 ||vandammestijl.be^
 ||vandammestyle.fr^
@@ -1489,6 +1496,7 @@
 ||venopflast.ch^
 ||venuvia.ch^
 ||venyro.ch^
+||verdara.co^
 ||verenelle.com^
 ||verillo.ch^
 ||veronora.ch^
