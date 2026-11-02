@@ -1,7 +1,7 @@
 ! Title: Inoffizielle Kopie - Liste problematischer Dropshipping-Shops (Konsumentenschutz)
 ! Source: https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/
 ! Disclaimer: Inoffizielle, automatisch erzeugte Kopie. Keine Verbindung zur Stiftung fuer Konsumentenschutz. Keine Gewaehr fuer Richtigkeit und Vollstaendigkeit.
-! Generated: 2026-10-26T18:13:11.771451+00:00
+! Generated: 2026-11-02T17:47:47.428457+00:00
 ||adamandrose-clo.com^
 ||adams-fashion.com^
 ||adhs.store^
@@ -90,6 +90,7 @@
 ||arosaversand.ch^
 ||arrani.ch^
 ||arsect.com^
+||arvion.com^
 ||aspenclothes.com^
 ||aspiria.ch^
 ||astridpedersen.com^
@@ -246,6 +247,7 @@
 ||bycheri.de^
 ||bygeneva.ch^
 ||bygeneva.de^
+||byluminas.com^
 ||bymayberry.com^
 ||caayatelier.de^
 ||calestria.de^
@@ -367,6 +369,7 @@
 ||derilaergo.ch^
 ||dermalux-swiss.ch^
 ||deskease.ch^
+||detson.de^
 ||devako.ch^
 ||dexus.ch^
 ||dharokfashion.com^
@@ -455,6 +458,7 @@
 ||eudorashops.com^
 ||euva.ch^
 ||evaly.de^
+||evaur.ch^
 ||ever-shape.nl^
 ||everisfashion.com^
 ||evershave.ch^
@@ -1053,6 +1057,7 @@
 ||nevova.ch^
 ||nevova.fr^
 ||newhoffmanandhearth.com^
+||nexbuy1.com^
 ||nicera.ch^
 ||nikolea.ch^
 ||nina-nicole.de^
@@ -1076,6 +1081,7 @@
 ||nordspur.de^
 ||nordstoq.ch^
 ||nordtaschen.de^
+||norramaison.com^
 ||norvio.ch^
 ||norwiss.de^
 ||nose-flow.ch^
@@ -1277,6 +1283,7 @@
 ||shopino-zurich.ch^
 ||shoplix.ch^
 ||shopluuma.de^
+||shoporat.com^
 ||shoptimal.ch^
 ||shopvivar.ch^
 ||shopwecro.com^
@@ -1441,6 +1448,7 @@
 ||trendy-zurich.com^
 ||trendypreis.ch^
 ||trendypreis.de^
+||trendytik.com^
 ||trendz-it.ch^
 ||trikozathletic.co^
 ||trinktiger.de^
@@ -1499,6 +1507,7 @@
 ||verdara.co^
 ||verenelle.com^
 ||verillo.ch^
+||veriteglow.com^
 ||veronora.ch^
 ||versand-studer.ch^
 ||vesca.ch^
