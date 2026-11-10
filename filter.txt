@@ -1,7 +1,7 @@
 ! Title: Inoffizielle Kopie - Liste problematischer Dropshipping-Shops (Konsumentenschutz)
 ! Source: https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/
 ! Disclaimer: Inoffizielle, automatisch erzeugte Kopie. Keine Verbindung zur Stiftung fuer Konsumentenschutz. Keine Gewaehr fuer Richtigkeit und Vollstaendigkeit.
-! Generated: 2026-11-02T17:47:47.428457+00:00
+! Generated: 2026-11-10T17:24:32.160706+00:00
 ||adamandrose-clo.com^
 ||adams-fashion.com^
 ||adhs.store^
@@ -285,6 +285,7 @@
 ||chiclyberlin.de^
 ||chiclyzurich.ch^
 ||chicquemoda.com^
+||chinderfunke.ch^
 ||chindliwelt.ch^
 ||clairemode.com^
 ||claracoboutique.ch^
@@ -773,6 +774,7 @@
 ||lena-boutique.de^
 ||lenaberger.com^
 ||lenasole.com^
+||lenimara.at^
 ||lennara.ch^
 ||lenomi-berlin.de^
 ||lenorezurich.com^
@@ -818,6 +820,7 @@
 ||lopix.ch^
 ||lorafashion.de^
 ||loramuenchen.de^
+||lorvano.ch^
 ||lorvez-paris.com^
 ||loulou-zurich.com^
 ||lovania-mode.ch^
@@ -850,6 +853,7 @@
 ||lunasandals-schweiz.com^
 ||lunero.ch^
 ||luneviahsuisse.com^
+||lunex-officiel.com^
 ||lunoire.ch^
 ||lurosa.ch^
 ||luster.ch^
@@ -1177,6 +1181,7 @@
 ||pfotenquelle.com^
 ||pikk.ch^
 ||pimdy.com^
+||pluffi.com^
 ||postilo.ch^
 ||potterpremiumstore.com^
 ||powerjets.ch^
@@ -1496,6 +1501,7 @@
 ||velurashop.ch^
 ||veluraswitzerland.ch^
 ||velva.ch^
+||velyxa.ch^
 ||vendio.ch^
 ||vendizi.ch^
 ||venero.ch^
@@ -1510,6 +1516,7 @@
 ||veriteglow.com^
 ||veronora.ch^
 ||versand-studer.ch^
+||vertofix.com^
 ||vesca.ch^
 ||vestea-fashion.com^
 ||vexorin.ch^
