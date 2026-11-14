@@ -12,10 +12,10 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -24,7 +24,10 @@ jobs:
 
     - name: Download page
       run: |
-        curl -fsSL -A "Mozilla/5.0 (compatible; adguard-filter-bot/1.0)" "$SOURCE_URL" -o data.html || exit 1
+        curl -fsSL \
+          --retry 2 --retry-delay 5 --connect-timeout 30 --max-time 120 \
+          -A "Mozilla/5.0 (compatible; adguard-filter-bot/1.0; +https://github.com/${{ github.repository }})" \
+          "$SOURCE_URL" -o data.html
 
     - name: Convert to filter.txt
       run: python3 convert.py data.html
@@ -34,14 +37,21 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
 
+        # Plausibilität: lieber nichts ändern als eine kaputte Liste veröffentlichen
+        DOMAINS=$(grep -c '^||' filter.txt 2>/dev/null || true)
+        if [ "${DOMAINS:-0}" -lt 300 ]; then
+          echo "::error::Nur ${DOMAINS:-0} Domains in der neuen filter.txt (Minimum 300), kein Commit"
+          exit 1
+        fi
+
         git add filter.txt
 
-        # Zeitstempel-Zeile ignorieren, nur echte Änderungen zählen
-        if git diff --cached --quiet -I '^! Generated:'; then
+        # Zeitstempel-Zeilen ignorieren, nur echte Änderungen zählen
+        if git diff --cached --quiet -I '^! (Generated|Last run|Last change):'; then
           echo "Keine Änderungen"
           exit 0
         fi
 
-        git commit -m "Update filter ($(date -u +%Y-%m-%dT%H:%M:%SZ)) [$(grep -c '^||' filter.txt) domains]"
+        git commit -m "Update filter ($(date -u +%Y-%m-%dT%H:%M:%SZ)) [$DOMAINS domains]"
         git pull --rebase origin main
         git push origin main
