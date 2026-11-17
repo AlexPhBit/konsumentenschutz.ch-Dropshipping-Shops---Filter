@@ -1,7 +1,7 @@
 ! Title: Inoffizielle Kopie - Liste problematischer Dropshipping-Shops (Konsumentenschutz)
 ! Source: https://www.konsumentenschutz.ch/online-ratgeber/dropshipping-die-stolpersteine-beim-onlinehandel-mit-billigware-aus-china/
 ! Disclaimer: Inoffizielle, automatisch erzeugte Kopie. Keine Verbindung zur Stiftung fuer Konsumentenschutz. Keine Gewaehr fuer Richtigkeit und Vollstaendigkeit.
-! Generated: 2026-11-10T17:24:32.160706+00:00
+! Generated: 2026-11-17T18:54:29.671410+00:00
 ||adamandrose-clo.com^
 ||adams-fashion.com^
 ||adhs.store^
@@ -141,6 +141,7 @@
 ||bastoz.ch^
 ||bauluvio.ch^
 ||bauluvio.com^
+||baumann-boutique.ch^
 ||baumann-modehaus.com^
 ||baumannbern.com^
 ||baumannzurich.ch^
@@ -746,6 +747,7 @@
 ||koprina.ch^
 ||korra.ch^
 ||kovali.de^
+||kronzurich.ch^
 ||kruger-mode.de^
 ||kuiwo.ch^
 ||kumono.ch^
@@ -785,6 +787,7 @@
 ||levarozurich.com^
 ||levicishop.com^
 ||levuna.ch^
+||lia-luzern.ch^
 ||lifenox.com^
 ||lifestyleproducts.ch^
 ||lilulo.ch^
@@ -1037,6 +1040,7 @@
 ||namelino.ch^
 ||nanashave.com^
 ||nancys-bags.com^
+||naomizurich.ch^
 ||naturcontact.de^
 ||naturcontact.us^
 ||naturnord.com^
@@ -1477,6 +1481,7 @@
 ||unyka.ch^
 ||up-bottles.ch^
 ||ursprungsgang.at^
+||ursulasandra.ch^
 ||usely.ch^
 ||utopiazurich.com^
 ||uttens-shop.com^
@@ -1606,6 +1611,7 @@
 ||willibraun.ch^
 ||willowandrosestore.com^
 ||wilma-tassen.nl^
+||wohlstil.com^
 ||wohnherz.ch^
 ||wolffashion.de^
 ||wolkenschaukel.de^
